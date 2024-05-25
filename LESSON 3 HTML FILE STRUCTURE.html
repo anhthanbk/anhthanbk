@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles.css" />
+    <title>Cấu trúc file HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+    <a href="./index.html">HOME</a>
+    <hr />
+    <h2>1. Cấu trúc cơ bản của file HTML</h2>
+    <pre>
+          <code class="language-html">
+              &lt;!DOCTYPE html&gt; <br />
+              &lt;html lang=&quot;vi&quot;&gt; <br />
+              &lt;head&gt; <br />
+              &lt;meta charset=&quot;UTF-8&quot; /&gt; <br />
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+              initial-scale=1.0&quot; /&gt; <br />
+              &lt;title&gt;Cấu trúc file HTML&lt;/title&gt; <br />
+              &lt;/head&gt; <br />
+              &lt;body&gt; <br />
+          </code>
+      </pre>
+    1. <code class="language-html">&lt;!DOCTYPE html&gt;</code> <br />
+    Khai báo doctype (document type declaration) <br />
+    2.
+    <code class="language-html">
+      &lt;html lang=&quot;vi&quot;&gt; &lt;/html&gt;</code
+    >
+    <br />
+    Thẻ HTML định nghĩa phần thân của tải liệu html, sử dụng thêm thuộc tính
+    <code class="language-html">lang="vi"</code> để chỉ ngôn ngữ được viết của
+    website <br />
+    3. <code class="language-html">&lt;head&gt; &lt;/head&gt;</code> <br />
+    Chứa các thông tin về trang web mà không hiển thị trực tiếp <br />
+    Các thông tin trong thẻ <code class="language-html">head</code> như: Tiêu đề
+    trang
+    <code class="language-html"
+      >&lt;title&gt;Cấu trúc file HTML&lt;/title&gt;</code
+    >, mô tả trang, từ khóa, thông tin tác giả, các tập tin css và javascript
+    được liên kết với trang. <br />
+    4. <code class="language-html">&lt;body&gt; &lt;/body&gt;</code> <br />
+    Chứa nội dung chính của trang web Các phần tử HTML bên trong thẻ body hiển
+    thị trực tiếp trên trình duyệt của người dùng, và tạo thành nội dung chính
+    của trang web.
+    <hr />
+    <h2>2. Các thẻ cơ bản</h2>
+    <h3>
+      a. Thẻ: <code class="language-html">&lt;h1-6&gt;&lt;/h1-6&gt;</code>
+    </h3>
+    <h1>thẻ h1</h1>
+    <h2>thẻ h2</h2>
+    <h3>thẻ h3</h3>
+    <h4>thẻ h4</h4>
+    <h5>thẻ h5</h5>
+    <h6>thẻ h6</h6>
+    <h3>
+      b. Thẻ: <code class="language-html">&lt;br /&gt; & &lt;hr /&gt;</code>
+    </h3>
+    <p>thẻ br: &lt;br /&gt; ngắt dòng</p>
+    <p>thẻ hr: &lt;hr /&gt; tạo đường kẻ ngang</p>
+    <h3>
+      c. Thẻ:
+      <code class="language-html"
+        >&lt;p&gt;&lt;/p&gt;, &lt;b&gt;&lt;/b&gt;,
+        &lt;strong&gt;&lt;/storng&gt;, &lt;i&gt;&lt;/i&gt;,
+        &lt;em&gt;&lt;/em&gt;, &lt;u&gt;&lt;/u&gt;</code
+      >
+    </h3>
+    <p></p>
+    <p>Thẻ p : paragraph</p>
+    <b>Thẻ b:</b> <br />
+    <strong>thẻ strong</strong><br />
+    thẻ strong là thẻ có ngữ nghĩa là nội dung quan trọng để nhấn mạnh <br />
+    <i>thẻ i</i> <br />
+    <em>thẻ em</em> <br />
+    thẻ em là thẻ có ngữ nghĩa là nội dung quan trọng để nhấn mạnh<br />
+    <h3>
+      d. Thẻ a:
+      <code class="language-html"
+        >&lt;a href=&quot;&quot; target="_blank"&gt;nội dung&lt;/a&gt;</code
+      >
+    </h3>
+    <h3>
+      e. Thẻ img:
+      <code class="language-html">
+        &lt;img src=&quot;&quot; alt=&quot;&quot; width=&quot;&quot;&gt;
+      </code>
+    </h3>
+    <h3>f. Thẻ <code class="language-html">ul & ol</code></h3>
+    <p>
+      thẻ ul: tạo list không theo thứ tự lệnh
+      <code class="language-html">ul>li*3</code>
+    </p>
+    <ul>
+      <li>nội dung chính</li>
+      <li>nội dung phụ</li>
+      <li>ví dụ</li>
+    </ul>
+    <p>
+      thẻ ol: tạo list theo thứ tự lệnh
+      <code class="language-html">ol>li*3</code>
+    </p>
+    <ol>
+      <li>nội dung chính</li>
+      <li>nội dung phụ</li>
+      <li>ví dụ</li>
+    </ol>
+    <p>
+      Lênh ol có thể thay đổi định dạng đánh số
+      <code class="language-html">&lt;ol type=&quot;&quot;&gt;&lt;/ol&gt;</code>
+    </p>
+    <p>Các lệnh <code class="language-html">ul & ol</code> có thể lồng nhau:</p>
+    <code class="language-html">ol>li*2>ul>li*3</code>
+    <code>
+      <ol>
+        <li>
+          mục 1
+          <ul>
+            <li>nd 1</li>
+            <li>nd 2</li>
+            <li>nd 3</li>
+          </ul>
+        </li>
+        <li>
+          mục 2
+          <ul>
+            <li>nd 4</li>
+            <li>nd 5</li>
+            <li>nd 6</li>
+          </ul>
+        </li>
+      </ol>
+    </code>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>

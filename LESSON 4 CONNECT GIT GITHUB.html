@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KẾT NỐI GIT VÀ GITHUB</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+    <a href="./index.html">HOME</a> <br />
+    <a href="https://www.git-scm.com/download/win" target="_blank"
+      >download GIT</a
+    >
+    <p>Hình ảnh cấu trúc trao đổi dữ liệu</p>
+    <img
+      src="./Images/trao doi thong tin du lieu.PNG"
+      alt="Gà lại lập trình"
+      width="device-width"
+    />
+    <h2>1. DEPLOY WEBSITE SỬ DỤNG VSCODE</h2>
+    <ol>
+      <li>
+        Tạo Repository trên GITHUB để lưu trữ dự án trên máy chủ GIT
+        <br />
+        New repository -> repository name -> thực hiện tập hợp các dòng lệnh
+        trên VSCODE
+        <pre>
+            <code class="language-html">
+    1. create new repository on the command line
+    git init
+    git add .
+    git commit -m "nội dung"
+    git branch -M main
+    git remote add origin https://github.com/.......(có link ở repository)
+    git push -u origin main
+    2. push an existing repository from the command line
+    git remote add origin https://github.com/.......(có link ở repository)
+    git branch -M main
+    git push -u origin main
+    3. Các lệnh nâng cao
+    git branch: xem các nhanh local
+    git branch -a: xem các nhanh cả local và remote
+    git pull : để kéo các lệnh sửa đổi từ repository về local
+    git branch -c "tên nhanh": copy nội dung nhánh hiện tại sang nhánh mới
+    git checkout "tên nhánh": chuyển sang làm việc nhánh khác
+    git checkout -b "tên nhánh": copy toàn bộ code nhánh hiện tại sang nhánh mới và con trỏ sang nhánh mới
+    git branch -d "tên nhánh": xóa nhánh tại local
+    git push -d origin "tên nhánh": xóa nhánh tại remote repository
+    git log & git log --online : kiểm tra lịch sử code
+            </code>
+        </pre>
+      </li>
+      <li>
+        Tạo dự án trên máy tính cá nhân: dùng để code và lưu trữ cục bộ trên máy
+        tính
+      </li>
+      <li>
+        Khởi tạo GIT
+        <ol type="a">
+          <li>Mở terminal</li>
+          <li>
+            Config mặc định chọn git bash khi mở
+            <code class="language-html">terminal</code> (mục select default
+            profile)
+          </li>
+          <li>
+            Kiểm tra trạng thái bằng lệnh
+            <code class="language-html">git status</code>
+          </li>
+          <li>
+            Khởi tạo một kho lưu trữ mới trên local <br />
+            <code class="language-html">git init</code>
+          </li>
+        </ol>
+      </li>
+      <li>add thư mục dự án vào staging area chờ commit</li>
+      <li>Commit và đẩy code lên GITHUB</li>
+      <li>
+        Deploy website <br />
+        vào repository đã tạo -> Settings -> Pages -> branch (chuyển sang main)
+        -> Vào action -> Chờ deploy website
+      </li>
+    </ol>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>

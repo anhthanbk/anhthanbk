@@ -1,0 +1,18 @@
+img {
+  transition: 1.5s;
+}
+input:checked ~ img {
+  display: none;
+}
+body {
+  background-color: rgb(243, 234, 221);
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: brown;
+}
+h3 {
+  color: green;
+}
