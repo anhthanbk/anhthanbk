@@ -1,7 +1,10 @@
 img {
   transition: 1.5s;
-  width: 80vw;
+  width: 90vw;
   height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 body {
   background-color: rgb(243, 240, 237);
