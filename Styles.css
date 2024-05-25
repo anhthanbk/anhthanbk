@@ -1,8 +1,7 @@
 img {
   transition: 1.5s;
-}
-input:checked ~ img {
-  display: none;
+  width: 80vw;
+  height: auto;
 }
 body {
   background-color: rgb(243, 240, 237);
@@ -15,4 +14,7 @@ h2 {
 }
 h3 {
   color: green;
+}
+input:checked ~ img {
+  display: none;
 }

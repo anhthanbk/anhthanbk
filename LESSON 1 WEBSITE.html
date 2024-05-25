@@ -7,9 +7,26 @@
     <!-- add file css vào html -->
     <link rel="stylesheet" href="Styles.css" />
     <title>STATIC WEB AND DYNAMIC WEB</title>
+    <style>
+      /* Ẩn ảnh mặc định */
+      .hidden-img {
+        display: none;
+      }
+
+      /* Hiển thị ảnh khi checkbox được chọn */
+      .checkbox:checked + .hidden-img {
+        display: block;
+      }
+    </style>
+    <style>
+      img {
+        width: 80vw; /* Chiều rộng ảnh là 80% của viewport width */
+        height: auto; /* Chiều cao được tự động tính toán để giữ tỷ lệ khung hình */
+      }
+    </style>
   </head>
   <body>
-    <a href="/laptrinhweb/index.html">HOME</a>
+    <a href="./index.html">HOME</a>
     <h1>BÀI 1 - STATIC WEBSITE & DYNAMIC WEBSITE</h1>
     <p>
       <strong>Static website: </strong>trang web mà cứ mỗi lần người dùng
@@ -23,16 +40,20 @@
         xếp, lọc database sau đó gửi lên websever
       </em>
     </p>
-    <input type="checkbox" name="" id="" />Hiện ảnh
+    <input type="checkbox" name="" id="" class="checkbox" />Ảnh mô tả static web
+    and dynamic web
     <img
       src="./Images/static web and dynamic web.PNG"
       alt="gà lại lập trình"
-      width="device-width"
+      class="hidden-img"
     />
+    <br />
+    <input type="checkbox" name="" id="" class="checkbox" />Ảnh mô tả frontend
+    and backend
     <img
       src="./Images/frontend and backend.PNG"
       alt="Gà lại lập trình"
-      width="device-width"
+      class="hidden-img"
     />
   </body>
 </html>
