@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML TABLE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <a href="./index.html">HOME</a>
+    <h2>
+      1. các cặp thẻ <code class="language-html">table - tr - td - th</code>
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Element</th>
+          <th>Ý nghĩa</th>
+          <th>Chi tiết</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><code class="language-html">&lt;tr&gt;&lt;/tr&gt;</code></td>
+          <td>Table row</td>
+          <td>Đại diện cho một hàng trong bảng HTML</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><code class="language-html">&lt;td&gt;&lt;/td&gt;</code></td>
+          <td>Table data</td>
+          <td>Định nghĩa một ô dữ liệu trong một bảng</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><code class="language-html">&lt;th&gt;&lt;/th&gt;</code></td>
+          <td>Table header</td>
+          <td>Định nghĩa một ô tiêu đề trong bảng</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <code class="language-html">&lt;thead&gt;&lt;/thead&gt;</code>
+          </td>
+          <td>Table header</td>
+          <td>
+            Định nghĩa phần đầu của bảng <br />Thường chứa các ô tiêu đề ("th")
+            của các cột trong bảng
+          </td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>
+            <code class="language-html">&lt;tbody&gt;&lt;/tbody&gt;</code>
+          </td>
+          <td>table body</td>
+          <td>
+            Định nghĩa phần thân của bảng <br />
+            Thường chứa các thẻ "tr" và các ô dữ liệu "td" tương ứng.
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            <code class="language-html">&lt;tfoot&gt;&lt;/tfoot&gt;</code>
+          </td>
+          <td>Table footer</td>
+          <td>
+            Định nghĩa phần cuối của bảng <br />
+            Thường chứa các ô chú thích, tổng kết, hoặc thông tin cuối cùng về
+            bảng
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td rowspan="4" colspan="5">
+            <p>Hình ảnh minh họa</p>
+            <img
+              src="./Images/html table.PNG"
+              alt="Gà lại lập trình"
+              width="100%"
+            />
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <h2>2. Colspan và rowspan</h2>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
