@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS basic</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+    <a href="./index.html">HOME</a>
+    <h1 style="text-align: center">CSS CƠ BẢN</h1>
+    <hr />
+    <h2>1. Ba vị trí đặt CSS</h2>
+    <img src="./Images/positon of css.PNG" alt="Gà lại lập trình" /> <br>
+    <b>Độ ưu tiên các vị trí đặt CSS:</b>
+    <span style="color: red;">CSS inline</span> ưu tiên đầu tiên, đối với <span style="color: red;">CSS Internal và CSS External</span>, cái nào khai báo sau sẽ ghi đè lên cái trước đó
+    <h3>a. Inline</h3>
+    <p>CSS nội tuyến: Viết ngay bên trong phần tử của HTML <ul>
+        <li>Khó thay đổi, mổi lần thay đổi phải thay đổi riêng lẻ</li>
+        <li>Không tái sử dụng được</li>
+        <li>Khó quản lý</li>
+        <li>Khó tách biệt cấu trúc</li>
+    </ul></p>
+    <h3>b. Internal</h3>
+    <p>CSS nội bộ: là cách viết CSS ngày trong cặp <span style="color: red;">Style</span> (đặt trong khối HEAD)</p>
+    <p><ul>
+        <li>Ưu điểm:
+            <ul>
+                <li>Code tách biệt với phần tử</li>
+                <li>có thể áp dụng với toàn trang</li>
+            </ul>
+        </li>
+        <li>Nhược điểm
+            <ul>
+                <li>Vẫn khó quản lý khi dự án lớn</li>
+                <li>Quá nhiều mã CSS làm HTML trở nên cồng kềnh</li>
+            </ul>
+        </li>
+    </ul></p>
+    <h3>c. External</h3>
+    <p>CSS bên ngoài: Trong trường hợp này sẽ áp dụng cho toàn bộ file HTML nằm trên trang web, tránh việc phải copy CSS ra tất cả các file</p>
+    <p>Tạo file CSS -> khai báo trong tệp HTML để link đến tệp CSS -> rel="Tên file CSS" thông báo đến tệp HTML về tệp CSS áp dụng</p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>
