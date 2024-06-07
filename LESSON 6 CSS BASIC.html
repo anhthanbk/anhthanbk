@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS basic</title>
     <link rel="stylesheet" href="Styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css" />
+    <style>
+      /* Ẩn ảnh mặc định */
+      .hidden-img {
+        display: none;
+      }
+      /* Hiển thị ảnh khi checkbox được chọn */
+      .checkbox:checked + .hidden-img {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <a href="./index.html">HOME</a>
@@ -44,7 +51,89 @@
     <h3>c. External</h3>
     <p>CSS bên ngoài: Trong trường hợp này sẽ áp dụng cho toàn bộ file HTML nằm trên trang web, tránh việc phải copy CSS ra tất cả các file</p>
     <p>Tạo file CSS -> khai báo trong tệp HTML để link đến tệp CSS -> rel="Tên file CSS" thông báo đến tệp HTML về tệp CSS áp dụng</p>
-    
+    <h2>2. Các thuộc tính cơ bản</h2>
+    <a href="https://www.w3schools.com/cssref/index.php">Tra cứu các thuộc tính cơ bản</a> <br>
+    <input type="checkbox" name="" id="" class="checkbox"> Hiện ảnh các thuộc tính
+    <img src="./Images/css basic.PNG" alt="Gà lại lập trình" class="hidden-img">
+    <h3>a. Opacity, display và visibility</h3>
+    <h4>1.1 Opacity Quy định độ trong suốt</h4>
+    <code class="language-html">
+      h2 {opacity: 100% - 0% (điều chỉnh độ trong suốt)}
+    </code>   
+    <p>Đặc điểm:</p>
+    <ul>
+      <li>Không nhìn thấy trên giao diện</li>
+      <li>Vẫn chiếm không gian</li>
+      <li>Vẫn tương tác được</li>
+    </ul>
+    <h4>1.2 display: none <span style="color: red;">Ẩn phần tử khỏi giao diện (xóa cả không gian nó đang chiếm)</span></h4>
+    <code class="language-html">h2 {display: none;}</code>
+    <h4>1.3 visibility: <span style="color: red;">Ẩn hoặc hiện element</span></h4>
+    <code class="language-html">h2 {visibility: hidden/ visible}</code>
+    <ul>
+      <li>Không nhìn thấy trên giao diện</li>
+      <li>Vẫn chiếm không gian</li>
+      <li><span style="color: red;">Không</span> tương tác được</li>
+    </ul>
+    <input type="checkbox" name="" id="" class="checkbox" />So sánh opacity - visibility - display 
+    <img 
+    src="./Images/opacity display visibility.PNG" 
+    alt="Gà lại lập trình"
+    class="hidden-img"
+    />
+    <h3>b. Favicon</h3>
+    <p>Tạo icon ở thanh title</p>
+    <code class="language-html">&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;</code>
+    <h3>c. Css Prefix</h3>
+    Thêm các tiền tố prefix cho các trình duyệt không hỗ trợ Css <br>
+    <a href="https://autoprefixer.github.io/">Link đổi lệnh CSS sang CSS prefix</a>
+    <p>Để tra cứu xem lệnh CSS có hỗ trợ prefix cho các trình duyệt không, truy cập đường link bên dưới để tham khảo lệnh</p>
+    <a href="https://caniuse.com/">Link tra cứu các lệnh hỗ trợ prefix</a>
+    <h3>d. CSS Selector: <span style="color: red;">Tag name, id, class</span></h3>
+    <a href="https://www.w3schools.com/cssref/css_selectors.php">Link đến danh mục các CSS selectors</a>
+    <p id="css_selectors">Lưu ý: Không nên đặt trùng ID gây ảnh hưởng, ID và class không được đặt tền bắt đầu bằng số, nếu có 2 ký tự trở lên nên đặt dấu _ hoặc - để nối</p>
+    <a href="https://validator.w3.org/#validate_by_input">Kiểm tra lỗi của code</a> <br>
+    <p class="demo">Để tác đông lên nhiều phần tử có thể sử dụng class thay thế id</p>
+    <p class="demo demo2">ở CSS để goi ID đánh "#", để gọi class đánh "."</p>
+    <p>Tác động lên toàn bộ file HTML: <code class="language-html">* {} (dùng thẻ *)</code></p>
+    <p><code class="language-html">element.class</code>:Tác động lên các thẻ có class không tác động toàn bộ như thẻ *</p>
+    <p>Có thẻ liệt kê các phần tử để tác động ở CSS bằng ngăn cách nhau bởi các dấu phẩy</p>
+    <pre>
+      <code class="language-html">
+        # id {} (gọi ID)
+        . class (gọi class)
+        * {} (Tác động lên toàn bộ thẻ HTML)
+        element.class {} (Tác động lên từng element)
+        h1, h2, ul {
+          color: red, 
+          font size: 20px
+        } 
+        (Tác động lên các element được chọn)
+      </code>
+      </pre>
+      <code class="language-html"> Space selectors & >selector & +selector & ~selector</code>
+      <pre><code class="language-html">
+        div p {
+          color: blue,
+          font size: 20px,
+        } (Tắc động đến toàn bộ thẻ con p bên trong div)
+        div>p {
+          color: red,
+          font style: italic,
+        } Tác động đến các thẻ con P trực tiếp bên trong thẻ div, không tác động lên các thẻ con gián tiếp
+        div + p {tác động lên thẻ p đặt ngay sau thẻ div}
+        div ~ p {tác động tất cả các phần tử P đặt sau thẻ div}
+        đối với attribute selector 
+        [attribute] -> tác động lên các phần tử có attribute ngày
+        [attribute]="value" -> chọn các phần tử có giá trị bằng "value"
+        [attribute]*="value" -> chọn tất cả các phần tử có chưa "value" trong giá trị
+        [attribute]~= "value" -> tác động lên phần tử có thuộc tích trùng với value
+        [attribute] |="value" -> tác động lên các phàn tử có thuộc tính bắt đầu bằng "value"
+        [attribute]^="value" -> tác đông lên phần tử có giá trì "value" 
+        [attribute]$="value" -> tác động các phần tử kết thúc bằng "value"
+      </code></pre>
+
+    <a href="#">Về đầu trang</a>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>

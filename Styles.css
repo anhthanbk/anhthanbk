@@ -1,23 +1,17 @@
 img {
   transition: 1.5s;
-  width: 90vw;
+  width: 80vw;
   height: auto;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-body {
-  background-color: rgb(243, 240, 237);
+#css_selectors {
+  color: red;
 }
-h1 {
+.demo {
   color: blue;
 }
-h2 {
-  color: brown;
-}
-h3 {
-  color: green;
-}
-input:checked ~ img {
-  display: none;
+.demo2 {
+  font-style: italic;
 }
